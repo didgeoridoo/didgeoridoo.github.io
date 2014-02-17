@@ -1,0 +1,103 @@
+body {
+    font-weight: 200;
+    font-size: em($baseline-px*1.5);
+    font-family: $font-stack;
+}
+
+h1, h2 {
+    @include transition(font-size 0.5s ease-out);
+}
+
+h1 {
+    font-weight: 900;
+    font-size: em($baseline-px*3);
+    
+    @media screen and (max-width: $first-break) {
+        font-size: em($baseline-px*2);
+    }
+
+    @media screen and (max-width: $second-break) {
+        font-size: em($baseline-px*1.5);
+    }
+
+    @media screen and (max-width: $third-break) {
+        font-size: em($baseline-px*1.2);
+        line-height: 1;
+    }
+}
+
+h2 {
+    font-weight: 400;
+    font-size: em($baseline-px*2);
+    
+    @media screen and (max-width: $first-break) {
+        font-size: em($baseline-px*1.5);
+    }
+
+    @media screen and (max-width: $second-break) {
+        font-size: em($baseline-px*1);
+    }
+
+    @media screen and (max-width: $third-break) {
+        font-size: em($baseline-px*0.75);
+        line-height: 1;
+    }
+
+}
+
+// set maximum measure to ensure ~60 chars/line
+p {
+    max-width: 25em;
+    line-height: em($baseline-px*1.4);
+
+    @media screen and (max-width: $second-break) {
+        font-size: em($baseline-px*0.75);
+    }
+
+    @media screen and (max-width: $third-break) {
+        font-size: em($baseline-px*0.6);
+    }
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 400;
+    padding-bottom: 1px;
+}
+
+a:hover {
+    border-bottom: 2px solid;
+}
+
+section h1 {
+    position: relative; // to set position box for note
+}
+
+.note {
+    text-transform: uppercase;
+    font-weight: 400;
+    position: absolute;
+    top: -10px;
+    opacity: 0.66;
+    font-size: em($baseline-px*0.25);
+}
+
+@mixin text-on-dark-bg {
+    color: $text-lightest;
+    a { border-bottom-color: $text-lightest }
+}
+
+@mixin text-on-light-bg {
+    color: $text-darkest;
+    a { border-bottom-color: $text-darkest }
+}
+
+@mixin text-colored {
+    color: $text-hue;
+    a { border-bottom-color: $text-hue }
+}

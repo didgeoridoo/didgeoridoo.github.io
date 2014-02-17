@@ -1,0 +1,35 @@
+* {
+    @include box-sizing(border-box);
+}
+
+// Nav
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    @include inline-block;
+    padding: 0 em($baseline-px);
+    @media screen and (max-width: $nav-break) {
+        display: block;
+        padding: em($baseline-px*0.25) 0;
+    }
+}
+
+header, section {
+    margin: 0;
+    padding: em($baseline-px);
+
+    @media screen and (max-width: $third-break) {
+        padding: em($baseline-px) em($baseline-px*0.5);
+    }
+}
+
+h1, h2 {
+    margin: 0;
+
+    @media screen and (max-width: $third-break) {
+        margin-bottom: em($baseline-px*0.5);
+    }
+}

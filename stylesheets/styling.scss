@@ -1,0 +1,56 @@
+// Header
+
+header {
+    text-align: center;
+    
+    &:before{
+        @include transition (all 0.5s ease-out);
+
+        content: "";
+        position: absolute;
+        width: 250px;
+        height: 350px;
+        left: 0;
+        z-index: -1;
+        background-position-y: -24px; 
+
+        // Get my head out of the way!
+    
+        @include background-image(url("images/geordie-small.jpg"));
+        background-repeat: no-repeat;
+        
+        @media screen and (max-width: 980px) {
+        background-position-y: em($baseline-px*2); 
+        }
+
+        @media screen and (max-width: 780px) {
+            @include transform(rotate(90deg));
+            background-position-y: em($baseline-px*8);
+            background-position-x: em($baseline-px*-1); 
+        }
+
+    }
+    
+    h2 {
+        color: $text-dark;
+    }
+
+    nav a {
+        color: $text-hue;
+    }
+
+}
+
+// Dark/colored sections
+
+.about, .blog-latest {
+    @include text-on-dark-bg;
+}
+
+.about {
+    background-color: $color-primary;
+}
+
+.blog-latest {
+    background-color: $color-secondary;
+}
