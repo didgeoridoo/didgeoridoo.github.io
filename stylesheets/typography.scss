@@ -75,7 +75,9 @@ a {
     padding-bottom: 1px;
 
     @include hidpi(1.5) {
-        font-weight: 900;
+        section & {
+            border-bottom: 1px solid;
+        }
     }
 }
 
