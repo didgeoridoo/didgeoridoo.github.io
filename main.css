@@ -474,13 +474,18 @@ header {
     content: "";
     position: absolute;
     width: 250px;
-    height: 350px;
+    height: 375px;
     left: 0;
     z-index: -1;
     background-position-y: -24px;
-    background-image: url("images/geordie-small.jpg");
-    background-image: url("images/geordie-small.jpg");
+    background-image: url("images/geordie.jpg");
+    background-image: url("images/geordie.jpg");
     background-repeat: no-repeat; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
+      header:before {
+        background-image: url("images/geordie_2x.jpg");
+        background-image: url("images/geordie_2x.jpg");
+        background-size: 50% 50%; } }
     @media screen and (max-width: 980px) {
       header:before {
         background-position-y: 2em; } }

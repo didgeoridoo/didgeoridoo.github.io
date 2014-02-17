@@ -9,15 +9,20 @@ header {
         content: "";
         position: absolute;
         width: 250px;
-        height: 350px;
+        height: 375px;
         left: 0;
         z-index: -1;
         background-position-y: -24px; 
 
         // Get my head out of the way!
     
-        @include background-image(url("images/geordie-small.jpg"));
+        @include background-image(url("images/geordie.jpg"));
         background-repeat: no-repeat;
+
+        @include hidpi(1.5) {
+            @include background-image(url("images/geordie_2x.jpg"));
+            background-size: 50% 50%;
+        }
         
         @media screen and (max-width: 980px) {
         background-position-y: em($baseline-px*2); 
