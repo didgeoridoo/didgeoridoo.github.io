@@ -484,8 +484,7 @@ header {
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
       header:before {
         background-image: url("images/geordie_2x.jpg");
-        background-image: url("images/geordie_2x.jpg");
-        background-size: 50% 50%; } }
+        background-image: url("images/geordie_2x.jpg"); } }
     @media screen and (max-width: 980px) {
       header:before {
         background-position-y: 2em; } }

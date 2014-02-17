@@ -21,7 +21,7 @@ header {
 
         @include hidpi(1.5) {
             @include background-image(url("images/geordie_2x.jpg"));
-            background-size: 50% 50%;
+            //background-size: 50% 50%;
         }
         
         @media screen and (max-width: 980px) {
