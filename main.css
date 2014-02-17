@@ -422,9 +422,12 @@ section h1 {
   text-transform: uppercase;
   font-weight: 400;
   position: absolute;
-  top: -10px;
+  top: -12px;
   opacity: 0.66;
   font-size: 0.25em; }
+  @media screen and (max-width: 377px) {
+    .note {
+      font-size: 0.5em; } }
 
 * {
   -webkit-box-sizing: border-box;

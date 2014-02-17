@@ -87,9 +87,14 @@ section h1 {
     text-transform: uppercase;
     font-weight: 400;
     position: absolute;
-    top: -10px;
+    top: -12px;
     opacity: 0.66;
     font-size: em($baseline-px*0.25);
+
+    @media screen and (max-width: $third-break) {
+        font-size: em($baseline-px*0.5);
+    }
+
 }
 
 @mixin text-on-dark-bg {
