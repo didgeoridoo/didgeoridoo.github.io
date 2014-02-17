@@ -73,6 +73,10 @@ a {
     text-decoration: none;
     font-weight: 400;
     padding-bottom: 1px;
+
+    @include hidpi(1.5) {
+        font-weight: 900;
+    }
 }
 
 a:hover {
