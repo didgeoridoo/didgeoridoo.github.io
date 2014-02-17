@@ -1,5 +1,5 @@
 body {
-    font-weight: 400;
+    font-weight: 200;
     font-size: em($baseline-px*1.5);
     font-family: $font-stack;
 }
@@ -49,6 +49,11 @@ h2 {
 p {
     max-width: 25em;
     line-height: em($baseline-px*1.4);
+
+    // super light font looks terrible on high dpi screens; make heavier
+    @include hidpi(1.5){
+        font-weight: 400;
+    }
 
     @media screen and (max-width: $second-break) {
         font-size: em($baseline-px*0.75);

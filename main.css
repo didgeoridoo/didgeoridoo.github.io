@@ -353,7 +353,7 @@ th {
   padding: 0; }
 
 body {
-  font-weight: 400;
+  font-weight: 200;
   font-size: 1.5em;
   font-family: "Exo 2", sans-serif; }
 
@@ -393,6 +393,9 @@ h2 {
 p {
   max-width: 25em;
   line-height: 1.4em; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
+    p {
+      font-weight: 400; } }
   @media screen and (max-width: 500px) {
     p {
       font-size: 0.75em; } }
