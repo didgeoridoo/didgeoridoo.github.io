@@ -7,12 +7,23 @@ title: Geordie Kaytes - UX Design Portfolio
 <section class="previous-posts">
     <div class="wrapper">
         <h1>Previous posts:</h1>
-        {% for post in paginator.posts %}
-            <div class="post-stub">
-                <a href="{{post.url}}"><h1>{{post.title}}</h1>
-                <h2>{{ post.date | date_to_string }}</h2>
-                </a>
-            </div>
-        {% endfor %}
+        <!-- if you're on the blog main page, offset by one because of featured -->
+        {% if page.url == "/blog/index.html" %}
+            {% for post in paginator.posts offset:1 %}
+                <div class="post-stub">
+                    <a href="{{post.url}}"><h1>{{post.title}}</h1>
+                    <h2>{{ post.date | date_to_string }}</h2>
+                    </a>
+                </div>
+            {% endfor %}
+        {% else %}
+            {% for post in paginator.posts %}
+                <div class="post-stub">
+                    <a href="{{post.url}}"><h1>{{post.title}}</h1>
+                    <h2>{{ post.date | date_to_string }}</h2>
+                    </a>
+                </div>
+            {% endfor %}
+        {% endif %}
     </div>
 </section>
