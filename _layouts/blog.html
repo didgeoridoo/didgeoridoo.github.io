@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{page.title}}</title>
+    <link href='http://fonts.googleapis.com/css?family=Exo+2:200,400,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <header>
+        <h1>GK.write()</h1>
+        <h2>This is where I babble.</h2>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/portfolio">Portfolio</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    
+    <!-- if you're on the main blog page, show featured -->
+    {% if page.url == "/blog/index.html" %} 
+    <section class="blog-latest">
+        <div class="wrapper">
+            {% include _featured-post.html %}
+        </div>
+    </section>
+    {% endif %}
+
+    {{ content }}
+  
+    {% if paginator.total_pages > 1 %}
+    <section class="pagination">
+      <div class="wrapper">
+        {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+          {% else %}
+            <span>&laquo; Prev</span>
+          {% endif %}
+          
+          {% for page in (1..paginator.total_pages) %}
+            {% if page == paginator.page %}
+              <em>{{ page }}</em>
+            {% elsif page == 1 %}
+              <a href="{{ '/blog/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+            {% else %}
+              <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+            {% endif %}
+          {% endfor %}
+          
+          {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+          {% else %}
+            <span>Next &raquo;</span>
+          {% endif %}
+      </div>
+    </section>
+    {% endif %}
+    
+    {% include _fixed-nav.html %}
+</body>
+</html>

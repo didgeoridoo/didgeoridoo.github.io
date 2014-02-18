@@ -1,0 +1,8 @@
+{% for post in site.posts limit:1 %}
+    <div class="featured">
+        <img src="/images/{{post.featured-image}}" alt="{{post.featured-alt}}">
+    </div>
+    <a href="{{post.url}}"><h1><span class="note">Latest post:</span>{{post.title}}</h1>
+        <h2>{{post.subtitle}}</h2></a>
+    <p>{{post.excerpt}} <a href="{{ post.url }}">Read the whole thing</a></p>
+{% endfor %}</div>

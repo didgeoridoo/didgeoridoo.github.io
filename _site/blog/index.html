@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Geordie Kaytes - UX Design Portfolio</title>
+    <link href='http://fonts.googleapis.com/css?family=Exo+2:200,400,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <header>
+        <h1>GK.write()</h1>
+        <h2>This is where I babble.</h2>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/portfolio">Portfolio</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    
+    <!-- if you're on the main blog page, show featured -->
+     
+    <section class="blog-latest">
+        <div class="wrapper">
+            
+    <div class="featured">
+        <img src="/images/sunrise-flower.jpg" alt="The sun rising over a flower">
+    </div>
+    <a href="/blog/a-new-kaytes-site-jekyll-sass-elbow-grease"><h1><span class="note">Latest post:</span>A new kayt.es site!</h1>
+        <h2>Jekyll, SASS, and elbow grease</h2></a>
+    <p><p>After redirecting my own domain to <a href="http://www.freshtilledsoil.com">Fresh Tilled Soil</a> for nearly a year out of sheer embarrassment (no I won&#39;t show you my old site; use <a href="http://archive.org">the Wayback Machine</a> if you&#39;re so curious), the time has come. Welcome to the new kayt.es! </p>
+ <a href="/blog/a-new-kaytes-site-jekyll-sass-elbow-grease">Read the whole thing</a></p>
+</div>
+        </div>
+    </section>
+    
+
+    <section class="previous-posts">
+    <div class="wrapper">
+        <h1>Previous posts:</h1>
+        
+            <div class="post-stub">
+                <a href="/blog/a-new-kaytes-site-jekyll-sass-elbow-grease"><h1>A new kayt.es site!</h1>
+                <h2>17 Feb 2014</h2>
+                </a>
+            </div>
+        
+    </div>
+</section>
+
+  
+    
+    
+    <script>
+
+    var nav = document.getElementsByTagName("nav")[0];
+    var headerHeight = document.getElementsByTagName("header")[0].clientHeight;
+
+    window.onscroll = function(e){
+        // this nonsense doesn't happen at small sizes.
+        if(window.pageYOffset > headerHeight && window.innerWidth > 704) {
+            nav.classList.add("fixedNav");
+            nav.style.height = Math.min(window.pageYOffset - headerHeight, 30)*2+"px";
+        } else {
+            nav.classList.remove("fixedNav");
+            nav.style.height = "";
+        }
+    }
+
+</script>
+</body>
+</html>

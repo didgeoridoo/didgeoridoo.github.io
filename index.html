@@ -1,42 +1,27 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Geordie Kaytes - UX Strategy for Digital Products</title>
-    <link href='http://fonts.googleapis.com/css?family=Exo+2:200,400,900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
-    <header>
-        <h1>I'm Geordie Kaytes</h1>
-        <h2>and I make stuff.</h2>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/portfolio">Portfolio</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="about">
+---
+layout: home
+title: UX Design for Digital Products - Geordie Kaytes
+---
+
+<section class="about">
+    <div class="wrapper">
         <h1><span class="note">My Mission: </span>Love people</h1>
         <h2>&amp; build them things that make them happy.</h2>
         <p>I'm a digital product designer. I turn pixels and bits into experiences that change lives in small ways.</p>
-        <p>I focus on healthcare, education, and productivity management tools.</p>
-        <p>I'm the Director of UX Strategy at <a href="http://www.freshtilledsoil.com">Fresh Tilled Soil</a>, the best group of UX/UI maniacs in the world. My job is to lead the design of human-centered products and services that make our clients successful by making their customers happy. Come join us.</p>
-    </section>
-    <section class="project">
+        <p>I specialize in building tools for healthcare, education, and productivity management. I design for all platforms, but tend to focus these days on responsive web applications.</p>
+        <p>I'm the Director of UX Strategy at <a href="http://www.freshtilledsoil.com">Fresh Tilled Soil</a>, the best group of UX/UI maniacs in the world. My job is to lead the design of human-centered products that make our clients successful by making their customers happy. Come join us.</p>
+    </div>
+</section>
+<section class="project">
+    <div class="wrapper">
         <h1><span class="note">Current Project: </span>The Company is Broken.</h1>
         <h2>Scientific management is anti-human.</h2>
-        <p>I'm working on a book exploring how organizational structure and management techniques crush productivity and happiness, and what we can do about it. Follow my <a href="/blog">progress</a>.</p>
+        <p>I'm working on a book exploring how organizational structure and management techniques crush productivity and happiness, and what we can do about it. <a href="/blog">Follow my progress</a>.</p>
         <p>How can we visualize and build a new type of organization that turns human effort into happiness and value? Are legacy companies doomed, or can they adapt with the right leadership? If you'd like to contribute your thoughts, <a href="/contact">get in touch.</a></p>
-    </section>
-    <section class="blog-latest">
-        <h1><span class="note">From the blog:</span>Latest entry title.</h1>
-        <h2>Latest entry subtitle.</h2>
-        <p>Content preview: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, accusantium, eum exercitationem aperiam a quia illo recusandae molestiae magni consequuntur vero explicabo veritatis repudiandae deserunt aliquam rerum reprehenderit earum omnis? <a href="/contact">This is what a blog link looks like.</a></p>
-    </section>
-</body>
-</html>
+    </div>
+</section>
+<section class="blog-latest">
+    <div class="wrapper">
+        {% include _featured-post.html %}
+    </div>
+</section>

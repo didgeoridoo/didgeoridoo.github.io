@@ -2,41 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Geordie Kaytes - UX Strategy for Digital Products</title>
-    <link href='http://fonts.googleapis.com/css?family=Exo+2:200,900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UX Design for Digital Products - Geordie Kaytes</title>
+    <link href='http://fonts.googleapis.com/css?family=Exo+2:200,400,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/main.css">
 </head>
 <body>
-    <header>
-        <h1>I'm Geordie Kaytes</h1>
-        <h2>and I make stuff.</h2>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/portfolio">Portfolio</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="about">
-        <h1>Love people</h1>
+    <div class="wrapper">
+        <header class="homepage">
+            <h1>I'm Geordie Kaytes</h1>
+            <h2>and I make stuff.</h2>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/portfolio">Portfolio</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+      <section class="about">
+    <div class="wrapper">
+        <h1><span class="note">My Mission: </span>Love people</h1>
         <h2>&amp; build them things that make them happy.</h2>
         <p>I'm a digital product designer. I turn pixels and bits into experiences that change lives in small ways.</p>
-        <p>I focus on healthcare, education, and productivity management tools.</p>
-        <p>I'm the Director of UX Strategy at <a href="http://www.freshtilledsoil.com">Fresh Tilled Soil</a>, the best group of UX/UI maniacs in the world. My job is to lead the design of human-centered products and services that make our clients successful by making their customers happy. Come join us.</p>
-    </section>
-    <section class="project">
-        <h1><span class="note">Current project:</span><span class="book-title">The Company is Broken</span>.</h1>
+        <p>I specialize in building tools for healthcare, education, and productivity management. I design for all platforms, but tend to focus these days on responsive web applications.</p>
+        <p>I'm the Director of UX Strategy at <a href="http://www.freshtilledsoil.com">Fresh Tilled Soil</a>, the best group of UX/UI maniacs in the world. My job is to lead the design of human-centered products that make our clients successful by making their customers happy. Come join us.</p>
+    </div>
+</section>
+<section class="project">
+    <div class="wrapper">
+        <h1><span class="note">Current Project: </span>The Company is Broken.</h1>
         <h2>Scientific management is anti-human.</h2>
-        <p>I'm working on a book exploring how organizational structure and management techniques crush productivity and happiness, and what we can do about it. Follow my <a href="/blog">progress</a>.</p>
+        <p>I'm working on a book exploring how organizational structure and management techniques crush productivity and happiness, and what we can do about it. <a href="/blog">Follow my progress</a>.</p>
         <p>How can we visualize and build a new type of organization that turns human effort into happiness and value? Are legacy companies doomed, or can they adapt with the right leadership? If you'd like to contribute your thoughts, <a href="/contact">get in touch.</a></p>
-    </section>
-    <section class="blog-latest">
-        <h1><span class="note">From the blog:</span><span class="latest-entry">Latest entry title</span>.</h1>
-        <h2>Latest entry subtitle.</h2>
-        <p>Content preview: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, accusantium, eum exercitationem aperiam a quia illo recusandae molestiae magni consequuntur vero explicabo veritatis repudiandae deserunt aliquam rerum reprehenderit earum omnis? <a href="/contact">This is what a blog link looks like.</a></p>
-    </section>
+    </div>
+</section>
+<section class="blog-latest">
+    <div class="wrapper">
+        
+    <div class="featured">
+        <img src="/images/sunrise-flower.jpg" alt="The sun rising over a flower">
+    </div>
+    <a href="/blog/a-new-kaytes-site-jekyll-sass-elbow-grease"><h1><span class="note">Latest post:</span>A new kayt.es site!</h1>
+        <h2>Jekyll, SASS, and elbow grease</h2></a>
+    <p><p>After redirecting my own domain to <a href="http://www.freshtilledsoil.com">Fresh Tilled Soil</a> for nearly a year out of sheer embarrassment (no I won&#39;t show you my old site; use <a href="http://archive.org">the Wayback Machine</a> if you&#39;re so curious), the time has come. Welcome to the new kayt.es! </p>
+ <a href="/blog/a-new-kaytes-site-jekyll-sass-elbow-grease">Read the whole thing</a></p>
+</div>
+    </div>
+</section>
+      <script>
+
+    var nav = document.getElementsByTagName("nav")[0];
+    var headerHeight = document.getElementsByTagName("header")[0].clientHeight;
+
+    window.onscroll = function(e){
+        // this nonsense doesn't happen at small sizes.
+        if(window.pageYOffset > headerHeight && window.innerWidth > 704) {
+            nav.classList.add("fixedNav");
+            nav.style.height = Math.min(window.pageYOffset - headerHeight, 30)*2+"px";
+        } else {
+            nav.classList.remove("fixedNav");
+            nav.style.height = "";
+        }
+    }
+
+</script>
+      
 </body>
 </html>

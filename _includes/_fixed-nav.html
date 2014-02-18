@@ -1,0 +1,17 @@
+<script>
+
+    var nav = document.getElementsByTagName("nav")[0];
+    var headerHeight = document.getElementsByTagName("header")[0].clientHeight;
+
+    window.onscroll = function(e){
+        // this nonsense doesn't happen at small sizes.
+        if(window.pageYOffset > headerHeight && window.innerWidth > 704) {
+            nav.classList.add("fixedNav");
+            nav.style.height = Math.min(window.pageYOffset - headerHeight, 30)*2+"px";
+        } else {
+            nav.classList.remove("fixedNav");
+            nav.style.height = "";
+        }
+    }
+
+</script>

@@ -1,9 +1,30 @@
 ---
-layout: default
+layout: blog
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-{{ content }}
+<div class="featured-header" style="background-image: url(/images/{{page.featured-image}}); background-position: {{page.featured-offset-left}} {{page.featured-offset-top}}">
+    <div class="wrapper">
+        <section>
+            <h1>{{ page.title }}</h2>
+            <h2>{{ page.subtitle }}</h2>
+            <p class="meta">{{ page.date | date_to_string }}</p>
+        </section>
+    </div>
 </div>
+
+<div class="wrapper">
+    <section>
+        <div class="post">
+        {{ content }}
+        </div>
+    </section>
+</div>
+
+<section>
+        <div class="wrapper">{% if page.previous %}
+                <a class="prev-post" href="{{page.previous.url}}">&lt; Previous post: {{page.previous.title}}</a>
+            {% endif %}
+            {% if page.next %}
+            <a class="next-post" href="{{page.next.url}}">Next post: {{page.next.title}} &gt;</a>
+            {% endif %}</div>
+</section>
