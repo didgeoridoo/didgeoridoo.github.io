@@ -22,7 +22,9 @@ If you're not familiar with the process for blogging on Github Pages with Jekyll
 1. Think of blogging with WordPress.
 2. Now think of the EXACT OPPOSITE THING.
 
-To be fair, I have an odd set of personal needs that might not be a good fit with the platform. For example, I do not always know what date it is. This can be slightly inconvenient, because that's the first thing you have to manually enter as the file name for your post (Jekyll is unbending on this point). In the YAML front matter of the post (i.e. required metadata), you again must enter the date, plus the time in 24-hour format, which seems to me suspiciously European.
+To be fair, I have an odd set of personal needs that might not be a good fit with the platform. For example, I do not always know what date it is. This can be slightly inconvenient, because that's the first thing you have to manually enter as the file name for your post (Jekyll is unbending on this point).
+
+In the YAML front matter of the post (i.e. required metadata), you *again* must enter the date, plus the time in 24-hour format, which seems to me suspiciously European.
 
 So, what happens when a UX guy runs into a process that is, for lack of a better word, poo?
 

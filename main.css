@@ -406,6 +406,9 @@ p, li {
 li {
   list-style: none; }
 
+.post li {
+  margin-bottom: 4px; }
+
 .post ul li {
   list-style: disc outside none; }
 
