@@ -404,15 +404,24 @@ p {
       font-size: 0.6em; } }
 
 li {
-  list-style: none; }
+  list-style: none;
+  max-width: 20em; }
 
+.post ul li {
+  list-style: disc outside none; }
+
+.post ol li {
+  list-style: decimal outside none; }
+
+.post
 a {
   color: inherit;
   text-decoration: none;
   font-weight: 400;
   padding-bottom: 1px; }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
-    section a {
+    section .post
+    a {
       border-bottom: 1px solid; } }
 
 a:hover {

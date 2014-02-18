@@ -68,7 +68,18 @@ p {
 
 li {
     list-style: none;
+    max-width: 20em;
 }
+
+.post ul li {
+    list-style: disc outside none;
+}
+
+.post ol li {
+    list-style: decimal outside none;
+}
+
+.post 
 
 a {
     color: inherit;
