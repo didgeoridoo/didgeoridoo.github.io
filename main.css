@@ -517,7 +517,8 @@ header {
   header h2 {
     color: #aaaaaa; }
   header nav a {
-    color: #ff5544; }
+    color: #ff5544;
+    text-decoration: none; }
 
 header.homepage:before {
   -webkit-transition: all 0.5s ease-out;
