@@ -390,22 +390,21 @@ h2 {
       font-size: 0.75em;
       line-height: 1; } }
 
-p {
+p, li {
   max-width: 25em;
   line-height: 1.4em; }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
-    p {
+    p, li {
       font-weight: 400; } }
   @media screen and (max-width: 500px) {
-    p {
+    p, li {
       font-size: 0.75em; } }
   @media screen and (max-width: 377px) {
-    p {
+    p, li {
       font-size: 0.6em; } }
 
 li {
-  list-style: none;
-  max-width: 20em; }
+  list-style: none; }
 
 .post ul li {
   list-style: disc outside none; }

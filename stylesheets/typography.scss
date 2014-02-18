@@ -46,7 +46,7 @@ h2 {
 }
 
 
-p {
+p, li {
     // set maximum measure to ensure ~60 chars/line
     max-width: 25em;
 
@@ -68,7 +68,6 @@ p {
 
 li {
     list-style: none;
-    max-width: 20em;
 }
 
 .post ul li {
