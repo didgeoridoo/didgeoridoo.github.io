@@ -69,14 +69,14 @@ What if you could use the GitHub [contents API](http://developer.github.com/v3/r
 
 So, any thoughts on this approach? Anyone want to try to stop me? Because, [please stop me](http://www.kayt.es/contact). Otherwise I actually might do this.
 
-### Edit
+### Edit: Feb 19th, 7:45am
 
 I seem to have independently invented [prose.io](http://prose.io). I'm adding this edit from their delightful web interface. Review to come.
 
-### Edit the second
+### Edit the second: Feb 19th, 8:00am
 
 My first pass at Prose.io resulted in a "build failed" error when I tried to update this post with the previous edit (meta!). From what I can find in a brief search online, this may have something to do with GitHub Pages' implementation of Jekyll. More to come.
 
-### Edit the third
+### Edit the third: Feb 19th, 5:15pm
 
 So Prose.io apparently clobbered the "date" YAML field in this post, which blew up Jekyll with no warning or guidance. I wonder how that happened...
