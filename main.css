@@ -559,7 +559,7 @@ header.homepage:before {
 .blog-latest {
   background-color: #1f6b75; }
 
-.blog-latest h1, .blog-latest h2, .blog-latest p {
+.blog-latest h1, .blog-latest h2, .blog-latest p, .blog-latest a, .blog-latest li {
   position: relative;
   z-index: 2; }
 .blog-latest .featured {
