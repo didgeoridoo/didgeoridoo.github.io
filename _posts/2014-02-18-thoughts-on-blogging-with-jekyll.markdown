@@ -6,7 +6,7 @@ title: Thoughts on blogging with Jekyll
 "featured-offset-top": "50%"
 "featured-offset-left": "50%"
 subtitle: "Or: this is going to get old really fast"
-date: {}
+date:   2014-02-18 22:16:00
 categories: complaints
 published: true
 ---
@@ -76,3 +76,7 @@ I seem to have independently invented [prose.io](http://prose.io). I'm adding th
 ### Edit the second
 
 My first pass at Prose.io resulted in a "build failed" error when I tried to update this post with the previous edit (meta!). From what I can find in a brief search online, this may have something to do with GitHub Pages' implementation of Jekyll. More to come.
+
+### Edit the third
+
+So Prose.io apparently clobbered the "date" YAML field in this post, which blew up Jekyll with no warning or guidance. I wonder how that happened...
