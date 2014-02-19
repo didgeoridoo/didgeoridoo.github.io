@@ -11,7 +11,7 @@ date:   2014-02-18 18:31:00
 categories: complaints
 ---
 
-Twenty-four blissful hours ago, I built and launched a new webpage using Jekyll, hosted on [Github Pages](http://pages.github.com). You may be familiar with it; it's the one you're currently reading. DNS propagation issues aside, I was excited about the launch.
+Twenty-four blissful hours ago, I built and launched a new webpage. You may be familiar with it; it's the one you're currently reading. It's my first foray into blogging using Jekyll, hosting through [Github Pages](http://pages.github.com). DNS propagation issues aside, I was excited about the launch. 
 
 "Perhaps", I thought, "I will write more if I have a nice-looking, personal place to do it! The publishing process seems easy. You just... something... Markdown... and... git push? Whatever, I'll figure it out."
 
