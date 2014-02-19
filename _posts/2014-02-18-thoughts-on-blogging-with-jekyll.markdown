@@ -72,3 +72,7 @@ So, any thoughts on this approach? Anyone want to try to stop me? Because, [plea
 ### Edit
 
 I seem to have independently invented [prose.io](http://prose.io). I'm adding this edit from their delightful web interface. Review to come.
+
+### Edit the second
+
+My first pass at Prose.io resulted in a "build failed" error when I tried to update this post with the previous edit (meta!). From what I can find in a brief search online, this may have something to do with GitHub Pages' implementation of Jekyll. More to come.
