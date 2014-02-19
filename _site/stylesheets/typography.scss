@@ -46,9 +46,9 @@ h2 {
 }
 
 
-p {
-    // set maximum measure to ensure ~60 chars/line
-    max-width: 25em;
+p, li {
+    // set maximum measure to ensure ~65 chars/line
+    max-width: 26em;
 
     line-height: em($baseline-px*1.4);
 
@@ -68,6 +68,18 @@ p {
 
 li {
     list-style: none;
+}
+
+.post li {
+    margin-bottom: 4px;
+}
+
+.post ul li {
+    list-style: disc outside none;
+}
+
+.post ol li {
+    list-style: decimal outside none;
 }
 
 a {

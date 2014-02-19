@@ -47,8 +47,8 @@ h2 {
 
 
 p, li {
-    // set maximum measure to ensure ~60 chars/line
-    max-width: 25em;
+    // set maximum measure to ensure ~65 chars/line
+    max-width: 26em;
 
     line-height: em($baseline-px*1.4);
 
@@ -81,8 +81,6 @@ li {
 .post ol li {
     list-style: decimal outside none;
 }
-
-.post 
 
 a {
     color: inherit;
