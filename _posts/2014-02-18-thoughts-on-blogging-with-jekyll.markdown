@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "Thoughts on blogging with Jekyll"
-featured-image: "microphone.jpg"
-featured-alt: "A microphone set up on a stage"
-# featured image art direction (default is 0% 50%)
-featured-offset-top: "50%"
-featured-offset-left: "50%"
+title: Thoughts on blogging with Jekyll
+"featured-image": microphone.jpg
+"featured-alt": A microphone set up on a stage
+"featured-offset-top": "50%"
+"featured-offset-left": "50%"
 subtitle: "Or: this is going to get old really fast"
-date:   2014-02-18 18:31:00
+date: {}
 categories: complaints
+published: true
 ---
 
 Twenty-four blissful hours ago, I built and launched a new webpage. You may be familiar with it; it's the one you're currently reading. It's my first foray into blogging using Jekyll, hosting through [Github Pages](http://pages.github.com). DNS propagation issues aside, I was excited about the launch. 
@@ -68,3 +68,7 @@ What if you could use the GitHub [contents API](http://developer.github.com/v3/r
 4. Upload images that can be smartly compressed before getting dropped into your repo
 
 So, any thoughts on this approach? Anyone want to try to stop me? Because, [please stop me](http://www.kayt.es/contact). Otherwise I actually might do this.
+
+### Edit
+
+I seem to have independently invented [prose.io](http://prose.io). I'm adding this edit from their delightful web interface. Review to come.
