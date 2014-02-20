@@ -5,7 +5,7 @@ subtitle: "Good for validation and funding, bad for design"
 featured-image: "church.jpg"
 featured-alt: "The roof of a mission in california"
 # featured image art direction (default is 0% 50%)
-featured-offset-top: "0%"
+featured-offset-top: "50%"
 featured-offset-left: "50%"
 date:   2014-02-19 22:16:00
 categories: thoughts
@@ -25,4 +25,6 @@ Up to that point, they'd conceived of the primary user as a data analyst, or per
 
 Here's a secret: you will never win over the Excel wizards, with their ergonomic keyboards and their short sleeve button-downs. They will export your data from your tool, writing a screen-scraping script in VBA if they have to. They will slice and dice and PivotTable the shit out of your data. Unless you're offering something truly unique (like proprietary algorithms), you don't have a product for these guys.
 
-But Excel wizards are a tiny fraction of the population. A frightening number of people treat Excel like a literal [paper spreadsheet](http://en.wikipedia.org/wiki/Spreadsheet#Paper_spreadsheets), typing numbers in columns and *summing them with a hand calculator*. These are the people you should be designing for. Lord knows they need it.
+But Excel wizards are a tiny fraction of the population. A frightening number of people treat Excel like a literal [paper spreadsheet](http://en.wikipedia.org/wiki/Spreadsheet#Paper_spreadsheets), typing numbers in columns and *summing them with a hand calculator*. These are the people you should be designing for.
+
+Lord knows they need it.
