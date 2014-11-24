@@ -1,0 +1,76 @@
+body {
+    color: #333;
+}
+
+.manifesto {
+    position: relative;
+}
+
+.manifesto::before {
+    position: absolute;
+    top: -150px;
+    opacity: 0.23;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    background-image: url("../img/network-background.svg");
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-position: top center;
+}
+
+.content-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.content-wrapper p {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.manifesto h3 {
+    font-family: "Fira Sans";
+    color: #43306F;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+p {
+    font-family: "Merriweather";
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.9;
+}
+
+h3+p {
+    margin-top: 0;
+}
+
+p.pullquote {
+    font-family: "Fira Sans";
+    color: #43306F;
+    line-height: 1.15;
+    font-size: 60px;
+    padding: 0px 10px;
+}
+
+@media (max-width: 400px) {
+    .content-wrapper p {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    p {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    p.pullquote {
+        font-size: 30px;
+    }
+}
