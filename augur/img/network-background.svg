@@ -41,7 +41,7 @@
             <feGaussianBlur stdDeviation="5" in="SourceGraphic" result="blur"></feGaussianBlur>
         </filter>
     </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage" opacity="0.2">
         <g id="Artboard-9" sketch:type="MSArtboardGroup" transform="translate(-17.000000, -97.000000)" stroke="#A64694">
             <g id="Group-2" sketch:type="MSLayerGroup" transform="translate(37.000000, 117.000000)">
                 <path d="M281.642397,205.357281 L588.391753,113.789948 L945.342461,452.304768 L1223.79768,179.576031 L1006.46521,19.3553479 L1149.04736,562.396585 L528.58183,623.88982 L618.804124,290.932345 L326.294459,37.5415593 L433.615657,458.514497 L16.5972938,529.318299 L281.642397,205.357281 Z" id="Path-13" stroke-width="5" filter="url(#filter-1)" sketch:type="MSShapeGroup"></path>

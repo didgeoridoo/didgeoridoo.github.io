@@ -3,22 +3,13 @@ body {
 }
 
 .manifesto {
+    -webkit-font-smoothing: antialiased;
     position: relative;
-}
-
-.manifesto::before {
-    position: absolute;
-    top: -150px;
-    opacity: 0.23;
-    z-index: -1;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    content: "";
+    z-index: 2;
     background-image: url("../img/network-background.svg");
     background-repeat: no-repeat;
     background-size: 1000px;
-    background-position: top center;
+    background-position: center -100px;
 }
 
 .content-wrapper {
@@ -39,6 +30,8 @@ body {
     font-size: 64px;
     line-height: 1.1;
     text-align: center;
+    margin-top: 0;
+    padding-top: 40px;
 }
 
 p {
