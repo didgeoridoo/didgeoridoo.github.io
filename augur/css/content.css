@@ -53,7 +53,10 @@ p.pullquote {
     padding: 0px 10px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
+    .manifesto h3 {
+        font-size: 30px;
+    }
     .content-wrapper p {
         padding-left: 10px;
         padding-right: 10px;
@@ -65,5 +68,6 @@ p.pullquote {
 
     p.pullquote {
         font-size: 30px;
+        line-height: 1.05;
     }
 }
